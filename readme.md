@@ -1,86 +1,27 @@
-## GIT BASICS COMMANDS
+# MEAN Stack Practice (Part 2)
 
-# git init
-// Initialize a new Git repository.
+Part 2 of my MEAN stack course work.
 
+## What's inside
 
-# git remote add origin <URL>
-Add a remote repository.
+| Folder | Contents |
+|---|---|
+| `HTML/`, `css/` | Responsive HTML, Bootstrap, Material, Tailwind |
+| `JS/` | JS basics, sync vs async, fetching from APIs |
+| `MongoDB/Queries.md` | MongoDB query notes |
+| `server/` | Plain Node.js server |
+| `backend/` | Express + Mongoose posts API (`/api/posts`, `/api/create-post`, `/api/update-post/:id`) |
 
-📁 Staging & Committing
+## Running the backend
 
-# git add .
-Stage all changes for commit.
+Requires MongoDB running locally (`mongodb://localhost:27017/posts`).
 
+```bash
+cd backend
+npm install
+node index.js
+```
 
-# git commit -m "Your commit message"
-Commit staged changes with a message.
+## Author
 
-⬆️ Push & ⬇️ Pull
-
-# git push -u origin master
-Push changes to the master branch on the remote.
-
-
-# git pull origin master
-Pull the latest changes from the master branch.
-
-📥 Cloning
-
-# git clone <URL>
-Clone an existing repository.
-
-🔍 Status & Logs
-
-# git status
-Show the working tree status.
-
-
-# git log
-View commit history.
-
-🌿 Branching
-
-# git branch
-List, create, or delete branches.
-
-
-# git checkout <branch-name>
-Switch to the specified branch.
-
-
-# git merge <branch-name>
-Merge the specified branch into the current one.
-
-🌐 Remote Repositories
-
-# git remote -v
-View all remote repositories.
-
-
-# git remote remove origin
-Remove the remote named origin.
-
-🛠️ Undoing Changes
-
-# git reset --hard <commit-id>
-Reset your repo to a specific commit and discard all changes.
-
-
-# git revert <commit-id>
-Revert a specific commit.
-
-🧹 File Management
-
-# git rm <file-name>
-Remove a file from the working directory and stage the removal.
-
-
-# git mv <old-name> <new-name>
-Rename a file and stage the change.
-
-🔄 Fetching
-
-# git fetch
-Download objects and refs from another repository.
-
+**Mati ul Rehman**: [github.com/Matiz009](https://github.com/Matiz009)
